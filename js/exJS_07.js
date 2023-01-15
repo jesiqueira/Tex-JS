@@ -43,7 +43,7 @@ Object.keys(carrinho).forEach((key, i) => {
   document.querySelector(`.item-carrinho-${i} .item-preco span`).innerText = `R$ ${carrinho[key].preco.toFixed(2)}`
   document.querySelector(`.item-carrinho-${i} .item-total span`).innerText = `R$ ${carrinho[key].preco.toFixed(2)}`
   // total += carrinho[key].preco;
-  console.log(key);
+  console.log(`Chave: ${key}`);
   console.log(`${key} : ${carrinho[key].nome}`);
 });
 

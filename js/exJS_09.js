@@ -21,12 +21,21 @@ let carrinho = {
     quantidade: 1,
     total: 1,
   },
-  criarImagem: function () {
+  criarImagem: function (url, nome, obj) {
     let imagem = new Image(url, nome, obj);
     imagem.src = url;
     imagem.setAttribute("class", "w-100");
     imagem.alt = nome;
     obj.appendChild(imagem);
+  },
+  criaInputNumber: function (obj) {
+    let inputNumber = document.createAttribute("input");
+    inputNumber.type = "number";
+    // inputNumber.setAttribute("class", "w-50 border-0 bg-light");
+    inputNumber.min = "0";
+    inputNumber.max = "10";
+    inputNumber.value = "1";
+    obj.appendChild(inputNumber)
   },
 };
 
@@ -58,14 +67,21 @@ Object.keys(carrinho).forEach((key, i) => {
   // console.log(i, 'x');
   var divItem = document.createElement("div");
   divItem.setAttribute("class", `item-carrinho-${i} row mt-2`);
+
   Object.keys(carrinho[key]).forEach((otherKey, ii) => {
     // console.log(otherKey);
     var item = document.createElement("div");
     item.setAttribute("class", `col item-${otherKey}`);
-
     ii === 0
-      ? carrinho["criarImagem"](carrinho[key].imagem, carrinho[key].nome, item)
+      ? carrinho["criarImagem"](
+          `/images/produtos/${carrinho[key].imagem}`,
+          carrinho[key].nome,
+          item
+        )
       : (item.innerText = carrinho[key][otherKey]);
+    
+
+    ii === 3 ? carrinho['criaInputNumber'](item):
     divItem.appendChild(item);
   });
   document.querySelector("#itens-carrinho").appendChild(divItem);

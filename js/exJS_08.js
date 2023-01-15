@@ -58,24 +58,24 @@ Object.keys(carrinho).forEach((key, i) => {
 
 
 {/* <div class="row mt-4 item-carrinho-0">
-              <div class="col item-imagem"></div>
-              <div class="col item-nome">
-                <span></span>
-              </div>
-              <div class="col item-preco">
-                <span></span>
-              </div>
-              <div class="col item-quantidade">
-                <input
-                  value="1"
-                  type="number"
-                  name="item-qtd"
-                  class="input-item-qtd w-50 border-0 bg-light"
-                  min="0"
-                  max="10"
-                />
-              </div>
-              <div class="col item-total">
-                <span></span>
-              </div>
-            </div> */}
+      <div class="col item-imagem"></div>
+      <div class="col item-nome">
+        <span></span>
+      </div>
+      <div class="col item-preco">
+        <span></span>
+      </div>
+      <div class="col item-quantidade">
+        <input
+          value="1"
+          type="number"
+          name="item-qtd"
+          class="input-item-qtd w-50 border-0 bg-light"
+          min="0"
+          max="10"
+        />
+      </div>
+      <div class="col item-total">
+        <span></span>
+      </div>
+    </div> */}
