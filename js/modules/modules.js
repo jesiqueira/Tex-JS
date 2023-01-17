@@ -27,8 +27,8 @@ function trocaTurno(t1Txt, t2Txt, info0, info1) {
 }
 
 function trocaSetor(st1Txt, st2Txt, setor0, setor1) {
-    setor0.innerText = st1Txt.value
+    st1Txt.value === st2Txt.value && st1Txt.value !== '' && st2Txt.value !== '' ? alert('Escolha setores diferentes') : (setor0.innerText = st1Txt.value)
     setor1.innerText = st2Txt.value
 }
 
-export { trocaTurno }
+export { trocaTurno, trocaSetor }
