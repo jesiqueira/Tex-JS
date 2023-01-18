@@ -1,0 +1,30 @@
+Objeto Date()
+
+1 . new Date()
+2 . new Date(value)
+3 . new Date('dataString')
+4 . new Date(ano, mes, dia, hora, minutos, segundos, milisegundps)
+getDay() 0 - 6 (onde 0 domingo)
+getDate() dia do mes
+getMonth() 0 - 11 (onde 0 é Janeiro)
+
+1000000/1000 = segundo = 1000
+1000000/60000 = minutos = 16.6
+1000000/3.6e+6 = horas = 0.27
+1000000/8.64e+7 = dias = 0.0115
+1000000/6.048e+8 = semanas  = 0.00165
+
+
+
+
+[] n = new Date('December 22, 1980 03:04:55')
+[] n = new Date('December 22, 1980 03:04:55')
+[] x = new Date('1980-12-17T04:06:22')
+[] y = new Date('1980,11,17')
+[] y = new Date('1980,12,17')
+[] y = new Date('1980,12,18')
+[] w = new Date()
+[] w.getTime()
+[] Date.now()
+
+[] padStart(), padEnd()

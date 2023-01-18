@@ -31,4 +31,12 @@ function trocaSetor(st1Txt, st2Txt, setor0, setor1) {
     setor1.innerText = st2Txt.value
 }
 
-export { trocaTurno, trocaSetor }
+function trocaTipoTurno(tipo1Txt, tipo2Txt, extra0, extra1) {
+    let temp = tipo1Txt.value
+    tipo1Txt.value = tipo2Txt.value
+    extra0.innerText = tipo1Txt.value
+    tipo2Txt.value = temp
+    extra1.innerText = tipo2Txt.value
+}
+
+export { trocaTurno, trocaSetor, trocaTipoTurno}
